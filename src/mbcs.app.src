@@ -1,8 +1,12 @@
 {application, mbcs,
  [{description, "MBCS 1.0"},
-  {vsn, "1.0"},
+  {maintainers, ["happy"]},
+  {pkg_name, 'mbcs'},
+  {licenses, ["MIT"]},
+  {vsn, "1.1.1"},
   {modules, [mbcs, mbcs_server, mbcs_sup]},
   {registered, [mbcs, mbcs_server]},
   {applications, [kernel, stdlib]},
+  {links, [{"Github", "https://github.com/dev800/erlang-mbcs"}]},
   {mod, {mbcs_sup,[]}}
  ]}.
